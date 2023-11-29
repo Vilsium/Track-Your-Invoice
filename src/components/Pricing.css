@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&family=Source+Code+Pro&display=swap');
+.pricing-container {
+    display: flex;
+    gap: 4.5rem;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin-top: 50px;
+}
+
+.pricing-plan {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #b7b2b2;
+    height: 300px;
+}
+
+.plan-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+}
+
+.plan-button {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+    .pricing-container {
+        flex-direction: column;
+        height: 100%;
+    }
+}
